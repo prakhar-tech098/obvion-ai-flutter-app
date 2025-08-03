@@ -25,7 +25,7 @@ class AppGradients {
       // For example, `stops: [0.0, 0.8]` would make the black color cover the
       // top 80% of the container, with the fade happening in the last 20%.
       // If left null, the transition is spread evenly.
-      stops: [0.2, 0.5],
+      stops: [0.1, 0.5],
     ),
   );
 }

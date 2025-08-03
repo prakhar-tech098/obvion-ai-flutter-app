@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "185553039311",
+    "project_id": "obvion-ai",
+    "storage_bucket": "obvion-ai.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185553039311:android:804eedab20a162b76fecba",
+        "android_client_info": {
+          "package_name": "com.example.untitled"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwqgwKrcnDUmSRSGpfrzs-QM3-tzOu9eQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
