@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # untitled
 
 A new Flutter project.
@@ -14,3 +15,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# obvion-ai-flutter-app
+>>>>>>> 291dc206f7003984e106e10a546fe660e4b2b013
