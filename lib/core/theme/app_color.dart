@@ -28,6 +28,17 @@ class AppGradients {
       stops: [0.1, 0.5],
     ),
   );
+  static const BoxDecoration lightGreyGradient = BoxDecoration(
+    gradient: LinearGradient(
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+      colors: [
+        Color(0xFFDEDEDE), // upper light grey
+        Color(0xFF9E9E9E), // lower grey
+      ],
+      stops: [0.1, 0.9], // adjust as needed for transition smoothness
+    ),
+  );
 }
 
 /*

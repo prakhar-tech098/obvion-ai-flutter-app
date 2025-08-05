@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_core/firebase_core.dart'; // Import Firebase Core
+import 'package:untitled/authentication/splashscreen.dart';
 // Adjust these paths to your project structure
 import 'authentication/loginpage.dart';
 import 'core/api/auth_provider.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           // Your app theme
         ),
-        home: const LoginPage(),
+        home:  SplashScreen(),
       ),
     );
   }
