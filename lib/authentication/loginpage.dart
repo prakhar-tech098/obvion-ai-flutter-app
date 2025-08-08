@@ -4,7 +4,6 @@ import '../core/api/auth_provider.dart';
 import 'SignUp.dart';
 import 'forgot_password.dart';
 import '../../core/theme/app_color.dart';
-
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
