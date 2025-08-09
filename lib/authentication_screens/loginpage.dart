@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../core/api/auth_provider.dart';
+import '../presentation/screens/home_screen.dart';
 import 'SignUp.dart';
 import 'forgot_password.dart';
 import '../../core/theme/app_color.dart';
@@ -50,13 +51,24 @@ class LoginPageState extends State<LoginPage> with SingleTickerProviderStateMixi
 
   bool get isKeyboardVisible => MediaQuery.of(context).viewInsets.bottom != 0;
 
-  void _login() {
+  Future<void> _login() async {
     FocusScope.of(context).unfocus();
-    context.read<AuthProvider>().login(
+
+    final authProvider = context.read<AuthProvider>();
+
+    bool success = await authProvider.login(
       emailController.text.trim(),
       passwordController.text.trim(),
     );
+
+    if (success) {
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (_) => const HomeScreen()),
+      );
+    }
+    // On failure, your LoginPage UI already shows errorMessage from provider.
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -106,7 +118,7 @@ class LoginPageState extends State<LoginPage> with SingleTickerProviderStateMixi
                   borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.1),
+                      color: Colors.black.withValues(alpha: 0.1),
                       blurRadius: 16,
                       offset: const Offset(0, -4),
                     ),
